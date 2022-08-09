@@ -27,11 +27,24 @@
 }
 .arrow:hover {
     font-size: 50px;
+    transition: font-size .2s;
     color: #ffffff;
 }
 .animate__animated.animate__shakeY {
     --animate-duration: 5s;
 }
+.offcanvas.offcanvas-end {
+    width: 250px !important;
+}
+.offcanvas-title {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+}
+.offcanvas-title:hover {
+    color: #000;
+}
+
 /****************************
 *          Navbar           *
 *****************************/
@@ -56,7 +69,11 @@
 .navbar-toggler {
     background-color: #f7f7f7;
 }
-
+.navbar {
+    --bs-navbar-toggler-icon-bg: url("https://img.icons8.com/material-outlined/48/000000/double-down.png")!important;
+    animation: shakeY;
+    --animate-repeat: 2;
+}
 html {
     scroll-behavior: smooth;  
 }
@@ -196,6 +213,9 @@ a {
 .a-portafolio {
     text-decoration: none;
     color: #ffffff;
+    margin-left: 10px;
+    font-size: 30px;
+
 }
 .a-portafolio:hover {
     color: #f1f1f1;
@@ -309,81 +329,3 @@ footer {
 }
 
 
-
-/*Porafolio*/
-
-/*
-.caption-style-2{
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-    
-}
-
-.caption-style-2 li{
-    float: left;
-    padding: 0px;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 3px 2px 8px 5px #bbbbbb70;
-    border-radius: 15px;
-    margin-bottom: 25px;
-}
-
-.caption-style-2 li:hover .caption{
-    opacity: 1;
-    transform: translateY(-100px);
-    -webkit-transform:translateY(-100px);
-    -moz-transform:translateY(-100px);
-    -ms-transform:translateY(-100px);
-    -o-transform:translateY(-100px);
-
-}
-
-
-.caption-style-2 img{
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    float: left;
-    z-index: 4;
-}
-
-
-.caption-style-2 .caption{
-    cursor: pointer;
-    position: absolute;
-    opacity: 0;
-    top:260px;
-    -webkit-transition:all 0.15s ease-in-out;
-    -moz-transition:all 0.15s ease-in-out;
-    -o-transition:all 0.15s ease-in-out;
-    -ms-transition:all 0.15s ease-in-out;
-    transition:all 0.15s ease-in-out;
-
-}
-.caption-style-2 .blur{
-    background: linear-gradient(130deg,#bd0073,rgb(28, 5, 157));
-    height: 49vh;
-    width: 44vw;
-    z-index: 5;
-    position: absolute;
-}
-
-.caption-style-2 .caption-text h1{
-    text-transform: uppercase;
-    font-size: 18px;
-}
-.caption-style-2 .caption-text{
-    z-index: 10;
-    color: #fff;
-    position: absolute;
-    width: 44vw;
-    height: 49vh;
-    text-align: center;
-    top:15px;
-}
-.a-portafolio {
-    text-decoration: none;
-    color: #fff;
-}*/
